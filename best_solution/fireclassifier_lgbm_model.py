@@ -1028,7 +1028,7 @@ if __name__ == '__main__':
     fm = FeaturesMaker()
     X = fm.make_all_features(df_points,df_train)
 
-    lgb_model = lgb.Booster(model_file='lgbm_model_3200_iter_214_filtered_features-month-not-categorical.dmp')
+    lgb_model = lgb.Booster(model_file='lgbm_model_3200_iter_214_filtered_features-without_month.dmp')
 
     X.replace({np.inf:np.nan,-np.inf:np.nan},inplace=True)
     X.fillna(method='ffill',inplace=True)
