@@ -1,0 +1,4 @@
+{
+    "image": "sberbank/mchs-python",
+    "entry_point": "python fireclassifier_lgbm_model.py $PATH_INPUT/input.csv $PATH_OUTPUT/output.csv"
+}
